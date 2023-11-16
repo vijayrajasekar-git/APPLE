@@ -1,0 +1,379 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Roboto+Slab:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto Slab', serif; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(40deg,midnightblue,purple);
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid rgb(12, 12, 12); */
+    background-image: linear-gradient(40deg,midnightblue,purple);
+
+}
+.mainhome{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid rgb(12, 12, 12); */
+    background-color: #222222;
+}
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid purple; */
+    font-weight: 600;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10PX;
+    font-size: 2rem;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+
+}
+
+nav li a:hover {
+    border-bottom: 1px solid purple;
+    transition: .2s;
+    color: rgb(255, 0, 255);
+
+}
+
+.logo {
+    font-size: 2.5rem;
+    margin-left: -50px;
+    color: white;
+}
+
+/* main area */
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textarea {
+    width: 50%;
+    height: 80vh;
+    /* border: 2px solid purple; */
+}
+
+.textarea .intro {
+    margin-left: 30%;
+    margin-top: 28%;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.intro button {
+    font-size: 2rem;
+    border-radius: 7%;
+    padding: 7px;
+    background-image: linear-gradient(to right, midnightblue, purple);
+    color: azure;
+}
+
+button:hover {
+    outline: 2px solid #fff;
+    outline-offset: -5px;
+    transition: .2s;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+
+.image {
+    width: 50%;
+    height: 80vh;
+    /* border: 2px solid purple; */
+    overflow: hidden;
+
+
+}
+
+.image img {
+    width: 80%;
+    height: 160%;
+  filter:drop-shadow(10px 10px 50px rgb(122, 11, 122));
+  
+}
+
+/* about section  */
+.upperhead {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 10px;
+    color: rgb(214, 9, 255);
+}
+
+.image2 {
+    width: 50%;
+    height: 80vh;
+    /* border: 2px solid purple; */
+    overflow: hidden;
+    margin-top: 9%;
+    margin-left: 6%;
+    margin-right: -4%;
+    object-fit: fill;
+
+
+}
+
+.myself {
+    font-size: 1.4rem;
+    margin-top: 15%;
+    padding: 30px;
+}
+
+.myself h2 {
+    color: rgb(255, 255, 255);
+}
+
+.myself p {
+    color: rgb(195, 136, 250);
+    margin-top: 10px;
+
+}
+.myself button {
+    font-size: 1.5rem;
+    border-radius: 7%;
+    padding: 7px;
+    background-image: linear-gradient(to right, midnightblue, purple);
+    color: azure;
+}
+
+button:hover {
+    outline: 2px solid #fff;
+    outline-offset: -5px;
+    transition: .2s;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+/* project area */
+.overallproject{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid rgb(12, 12, 12); */
+    background-color: #222222;
+}
+.myproject {
+    width: auto;
+    height: 19vh;
+    margin: 5px;
+    padding: 20px;
+    border-bottom: 1px solid purple;
+}
+
+.myproject h4 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.myproject p {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.myproject:hover {
+    outline: 2px solid rgb(141, 3, 141);
+    outline-offset: -4px;
+    transition: .2s;
+    color: rgb(141, 3, 141);
+    cursor: pointer;
+}
+
+.myproject p:hover {
+    transition: .2s;
+    color: rgb(141, 3, 141);
+}
+
+.image3 {
+    width: 60%;
+    height: 90vh;
+    /* border: 2px solid purple; */
+    overflow: hidden;
+    margin-top: 9%;
+    margin-left: 6%;
+    margin-right: -4%;
+    object-fit: fill;
+
+
+}
+
+/* blog  */
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.blog {
+    width: 32%;
+    height: 90vh;
+    outline: 1px solid rgb(0, 0, 0);
+    outline-offset: -5px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+
+}
+.blog:hover{
+    outline: 2px solid rgb(116, 7, 116);
+
+}
+
+.blogimg {
+    margin-top: 25px;
+    width:80%;
+    height: 35vh;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.blog hr {
+    width: 50%;
+    margin-left: 90px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.blog h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.blog p {
+    /* margin-bottom: 2px; */
+    padding: 5px;
+}
+
+.blog a {
+    font-size: 1.6rem;
+    border: 2px solid rgb(136, 1, 136);
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.blog a:hover{
+    background-color: purple;
+    color: black;
+    transition: .3s;
+}
+/* footer  */
+.footer1 {
+    width: 100%;
+    height: 35vh;
+    padding: 50px;
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+
+}
+
+.footer h4 {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.footer .logo1 {
+    font-size: 2rem;
+    margin-left: 30px;
+    font-weight: 700;
+
+}
+
+.moto {
+    font-size: 1rem;
+    margin-left: 20px;
+    font-weight: 700;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid purple; */
+    font-weight: 600;
+
+
+}
+
+.footerbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10PX;
+    font-size: 1rem;
+
+}
+
+.footerbar li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.footerbar li a:hover {
+    border-bottom: 1px solid purple;
+    transition: .2s;
+    color: rgb(255, 1, 255);
+
+}
+
+.footerbar.logo1 {
+    font-size: 1rem;
+    margin-left: -50px;
+    color: white;
+}
+
+.socialmedia {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.socialmedia i {
+    position: relative;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: -10px;
+}
+
+.socialmedia i:hover {
+    color: #ff0000;
+    font-size: 1.6rem;
+    transition: .2s;
+    text-shadow: 0px 3px 20px rgb(229, 255, 0);
+    cursor: pointer;
+
+
+}
