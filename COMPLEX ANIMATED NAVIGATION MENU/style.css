@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    position: relative;
+    background-color: rgb(37, 37, 37);
+    width: auto;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+nav a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 20px;
+    font-weight:400;
+    z-index: 1;
+    transition: .5s ease-in-out;
+}
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    background: linear-gradient(45deg,rgb(221, 192, 25), rgb(75, 64, 2));
+    border-radius: 8px;
+}
+nav a:nth-child(1):hover~span{
+    left: 0;
+}
+nav a:nth-child(2):hover~span{
+    left: 99px;
+}
+nav a:nth-child(3):hover~span{
+    left: 205px;
+    width: 90px;
+}
+nav a:nth-child(4):hover~span{
+    left: 307px;
+    width: 90px;
+}
+nav a:nth-child(5):hover~span{
+    left: 410px;
+    width: 110px;
+}
+.services{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+position: absolute;
+
+}
+.services ul{
+    margin-top: 20px;
+    visibility: hidden;    
+}
+.services ul li{
+    list-style: none;
+    padding: 2px;
+    margin: 2px;
+    font-size: 18px;
+    transition: .4s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid  rgb(163, 119, 8);
+    border-radius: 7px;
+
+    
+}
+#menuhover:hover ul{
+    visibility: visible;
+}
+.services li:hover{
+    border-color: rgb(163, 119, 8);
+    border-style: solid;
+    border-width: 0px .3px 4px .3px;
+    border-radius: 7px;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   position: absolute;
+   
+   }
+.mail p{
+    
+    margin-top: 20px;
+    padding: 5px;
+    border-bottom: 1px solid  rgb(163, 119, 8);
+    border-radius: 5px;
+    font-size: 18px;
+    visibility: hidden;
+}
+#email:hover p{
+    visibility: visible;
+    
+}
+.mail p:hover{
+    border-color: rgb(163, 119, 8);
+    border-style: solid;
+    border-width: 0px .3px 4px .3px;
+    border-radius: 7px;
+}
+.getthis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   position: absolute;
+}
+.getthis p{
+    
+    margin-top: 20px;
+    padding: 10px;
+    border-bottom: 1px solid  rgb(163, 119, 8);
+    border-radius: 5px;
+    font-size: 18px;
+    visibility: hidden;
+}
+#getit:hover p{
+    visibility: visible;
+    
+}
+.getthis p:hover{
+    border-color: rgb(163, 119, 8);
+    border-style: solid;
+    border-width: 0px .3px 4px .3px;
+    border-radius: 7px;
+}
